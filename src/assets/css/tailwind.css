@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply py-[10px] bg-[#CC5200] text-white font-semibold rounded-lg shadow-md hover:bg-[#cc5200dc] focus:outline-none focus:ring-2 focus:ring-[#cc52005d] focus:ring-opacity-75;
+  }
+  .btn-secondary {
+    @apply py-[10px] bg-transparent text-[#344054] font-semibold border rounded-lg shadow-md hover:bg-[#e2e1e0dc] focus:outline-none focus:ring-2 focus:ring-[#e2e1e0dc] focus:ring-opacity-75;
+  }
+  .custom-input {
+    @apply appearance-none border border-[#D0D5DD] w-full rounded-lg py-2 px-4 leading-7 focus:outline-none focus:border-[#D0D5DD];
+  }
+}
