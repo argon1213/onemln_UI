@@ -27,7 +27,7 @@ function LogIn() {
     <div className="flex justify-center">
       <div className="w-[360px] py-[100px]">
         <div>
-          <p className="text-[30px] font-medium text-center">
+          <p className="text-[30px] font-semibold text-center">
             Log in to your account
           </p>
           <p className="text-[16px] text-center">

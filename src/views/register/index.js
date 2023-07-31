@@ -30,7 +30,7 @@ function Register() {
     <div className="flex justify-center">
       <div className="w-[360px] py-[100px]">
         <div>
-          <p className="text-[30px] font-medium text-center">
+          <p className="text-[30px] font-semibold text-center">
             Create an account
           </p>
         </div>
