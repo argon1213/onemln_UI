@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import '/src/assets/css/fonts/fonts.css';
+@import 'antd/dist/reset.css';
 
 body {
   margin: 0;
