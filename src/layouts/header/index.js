@@ -16,7 +16,7 @@ function Header() {
     <div className="border-b ">
       <div className="flex justify-between items-center h-[80px] inner-container">
         <img
-          src="/src/assets/images/logo.png"
+          src="/logo.png"
           alt="logo"
           className="cursor-pointer"
           onClick={() => {

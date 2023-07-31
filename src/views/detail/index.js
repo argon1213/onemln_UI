@@ -56,7 +56,7 @@ function MyDetail() {
 
   return (
     <div className="flex justify-center">
-      <div className="w-[640px] py-[50px]">
+      <div className="w-[360px] lg:w-[640px] md:w-[480px] sm:w-[360px] py-[50px]">
         <div>
           <p className="text-[30px] font-medium text-center">My Details</p>
           <p className="text-[16px] text-center">
