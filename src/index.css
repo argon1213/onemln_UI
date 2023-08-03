@@ -2,21 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '/src/assets/css/fonts/fonts.css';
-@import 'antd/dist/reset.css';
+@import "/src/assets/css/fonts/fonts.css";
+@import "antd/dist/reset.css";
 
 body {
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Inter' 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; */
-  font-family: 'Inter';
+  font-family: "Open Sans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #101828;
+  color: #000;
+  letter-spacing: normal;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

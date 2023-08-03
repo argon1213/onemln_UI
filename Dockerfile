@@ -2,7 +2,7 @@
 FROM node:18-alpine
 
 # Set the working directory
-WORKDIR /jwt-auth-system-frontend
+WORKDIR /onemln_UI
 
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./

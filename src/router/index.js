@@ -1,8 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-import Layout from "../layouts";
 import LogIn from "../views/login";
 import Register from "../views/register";
-import MyDetail from "../views/detail";
 import ErrorPage from "../views/error-page";
 
 const useAuth = () => {
@@ -19,7 +17,7 @@ function Router() {
 
   return (
     <Routes>
-      <Route element={<Layout />}>
+      <Route>
         {!currentUser ? (
           <>
             <Route path="/login" element={<LogIn />} />
@@ -31,7 +29,6 @@ function Router() {
           <>
             <Route path="/login" element={<Navigate to={"/dashboard"} />} />
             <Route path="/register" element={<Navigate to={"/dashboard"} />} />
-            <Route path="/dashboard" element={<MyDetail />} />
             <Route path="/" element={<Navigate to={"/dashboard"} />} />
           </>
         )}
