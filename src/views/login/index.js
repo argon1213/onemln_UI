@@ -39,7 +39,7 @@ function LogIn() {
   };
 
   return (
-    <div className="flex justify-start min-h-[900px] min-w-[1440px]">
+    <div className="flex justify-start min-h-[700px] min-w-[1440px]">
       <div className="flex-1 container">
         <div className="flex flex-col justify-between h-full">
           <div className="flex justify-between w-full">
@@ -135,11 +135,11 @@ function LogIn() {
           </div>
         </div>
       </div>
-      <div className="h-[100vh] min-h-[900px]">
+      <div className="h-[100vh] min-h-[700px]">
         <img
           alt="login_img"
           src="/assets/images/Senza_titolo_1.png"
-          className="h-[100vh] min-h-[900px]"
+          className="h-[100vh] min-h-[700px]"
         />
       </div>
     </div>
