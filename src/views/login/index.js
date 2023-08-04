@@ -43,7 +43,7 @@ function LogIn() {
       <div className="grow ">
         <div className="des-content">
           <div className="flex flex-col justify-between h-full">
-            <div className="flex justify-between items-end w-full">
+            <div className="flex justify-between items-end w-full header-content">
               <a href="#">
                 <img
                   alt="logo"
@@ -53,10 +53,12 @@ function LogIn() {
               </a>
 
               <div className="flex flex-wrap justify-end pl-12 text-[20px] font-normal">
-                <div>Non hai ancora un account?</div>
+                <div className="header-question">
+                  Non hai ancora un account?
+                </div>
                 <a
                   href="#"
-                  className="font-bold text-[#FE1C4E] cursor-pointer ml-2"
+                  className="font-bold text-[#FE1C4E] cursor-pointer ml-2 whitespace-nowrap"
                 >
                   {"Iscriviti ora"}
                 </a>
@@ -95,37 +97,37 @@ function LogIn() {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-start">
-                  <div>
+                <div className="flex flex-wrap justify-start">
+                  <div className="submit-content">
                     <button className="btn-secondary" onClick={signIn}>
                       Accedi
                     </button>
                   </div>
-                  <div className="px-6 flex items-center">
-                    <span className="text-2xl font-medium text-[#56595E]">
+                  <div className="flex">
+                    <div className="px-6 text-2xl font-medium text-[#56595E] h-full leading-[65px] submit-connecter">
                       o
-                    </span>
-                  </div>
-                  <div className="pr-3">
-                    <img
-                      alt="google"
-                      className="cursor-pointer"
-                      src="/assets/images/Google_Logo.png"
-                    />
-                  </div>
-                  <div className="pr-3">
-                    <img
-                      alt="google"
-                      className="cursor-pointer"
-                      src="/assets/images/Facebook_Logo.png"
-                    />
-                  </div>
-                  <div className="pr-3">
-                    <img
-                      alt="google"
-                      className="cursor-pointer"
-                      src="/assets/images/Apple_Logo.png"
-                    />
+                    </div>
+                    <div className="pr-3">
+                      <img
+                        alt="google"
+                        className="cursor-pointer"
+                        src="/assets/images/Google_Logo.png"
+                      />
+                    </div>
+                    <div className="pr-3">
+                      <img
+                        alt="google"
+                        className="cursor-pointer"
+                        src="/assets/images/Facebook_Logo.png"
+                      />
+                    </div>
+                    <div className="pr-3">
+                      <img
+                        alt="google"
+                        className="cursor-pointer"
+                        src="/assets/images/Apple_Logo.png"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
