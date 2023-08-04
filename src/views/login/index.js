@@ -52,27 +52,27 @@ function LogIn() {
                 />
               </a>
 
-              <div className="flex flex-wrap justify-end pl-12 text-[20px] font-normal">
+              <div className="flex flex-wrap justify-end pl-12 text-[18px] font-normal">
                 <div className="header-question">
                   Non hai ancora un account?
                 </div>
                 <a
-                  href="#"
+                  href="/register"
                   className="font-bold text-[#FE1C4E] cursor-pointer ml-2 whitespace-nowrap"
                 >
-                  {"Iscriviti ora"}
+                  Iscriviti ora
                 </a>
               </div>
             </div>
             <div className="form-content">
               <div>
                 <div>
-                  <div className="font-bold text-[36px]">Bentornato!</div>
-                  <div className="text-[20px] pt-4">
+                  <div className="font-bold text-[32px]">Bentornato!</div>
+                  <div className="text-[18px] pt-4">
                     Accedi con le tue credenziali per iniziare a migliorarti
                   </div>
                 </div>
-                <div className="my-12">
+                <div className="my-8">
                   <div>
                     <CustomInput
                       type="text"
@@ -90,7 +90,7 @@ function LogIn() {
                     <div className="flex justify-end">
                       <a
                         href="#"
-                        className="text-[#FE1C4E] font-bold text-[20px] cursor-pointer"
+                        className="text-[#FE1C4E] font-bold text-[18px] cursor-pointer"
                       >
                         Password dimenticata?
                       </a>
@@ -133,7 +133,7 @@ function LogIn() {
               </div>
             </div>
 
-            <div className="text-[16px] font-normal footer-content">
+            <div className="text-[14px] font-normal footer-content">
               <p className="font-semibold">
                 Copyright © 2023 Luca Cerullo. Tutti i diritti riservati
               </p>

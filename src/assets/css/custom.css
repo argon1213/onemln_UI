@@ -1,19 +1,16 @@
-.container {
-}
-
 .des-content {
-  padding: 75px 55px 75px 150px;
-  min-height: 765px;
+  padding: 55px 55px 55px 130px;
+  min-height: 820px;
   height: 100vh;
 }
 
 .bg-img {
-  min-height: 765px;
+  min-height: 820px;
   height: 100vh;
 }
 
 .form-content {
-  width: 565px;
+  width: 540px;
 }
 
 @media only screen and (min-width: 2000px) {
@@ -25,7 +22,7 @@
 
 @media only screen and (max-width: 1520px) {
   .des-content {
-    padding: 55px 55px 55px 120px;
+    padding: 55px 55px 55px 100px;
   }
 }
 
@@ -38,7 +35,7 @@
     height: 100vh;
   }
   .form-content {
-    width: 565px;
+    width: 540px;
     margin: 0 auto;
   }
   .footer-content {
@@ -63,6 +60,7 @@
   .footer-content {
     text-align: left;
     padding-top: 40px;
+    padding-bottom: 40px;
   }
   .submit-content {
     padding-bottom: 40px;
@@ -89,6 +87,7 @@
   .footer-content {
     text-align: left;
     padding-top: 40px;
+    padding-bottom: 40px;
   }
   .submit-content {
     padding-bottom: 40px;

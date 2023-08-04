@@ -41,15 +41,17 @@ const CustomInput = (props) => {
         }
         value={inputValue}
         placeholder={isFocused ? "" : placeholder}
-        className={`custom-input h-[70px] ${style ? style : ""} ${
+        className={`custom-input h-[60px] ${style ? style : ""} ${
           errorState ? "!border-[#FE1C4E] " : " "
-        } ${getStyleState() ? "pb-0 pt-6" : ""}`}
+        } ${getStyleState() ? "pb-0 pt-6" : ""} ${
+          type === "password" ? "pr-14" : ""
+        }`}
         onChange={handleInputChange}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
       />
       {getStyleState() && (
-        <span className="absolute text-[#56595E] text-[16px] top-1 left-8">
+        <span className="absolute text-[#56595E] text-[14px] top-1 left-8">
           {placeholder}
         </span>
       )}
@@ -59,9 +61,9 @@ const CustomInput = (props) => {
           className="absolute right-6 top-1/2 transform -translate-y-1/2"
         >
           {showPassword ? (
-            <EyeSlashIcon className="h-7 w-7 text-[#56595E]" />
+            <EyeSlashIcon className="h-6 w-6 text-[#56595E]" />
           ) : (
-            <EyeIcon className="h-7 w-7 text-[#56595E]" />
+            <EyeIcon className="h-6 w-6 text-[#56595E]" />
           )}
         </button>
       )}
