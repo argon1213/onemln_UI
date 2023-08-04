@@ -41,9 +41,9 @@ const CustomInput = (props) => {
         }
         value={value}
         placeholder={isFocused ? "" : placeholder}
-        className={`custom-input h-[60px] ${style ? style : ""} ${
+        className={`custom-input h-[65px] ${style ? style : ""} ${
           errorState ? "!border-[#FE1C4E] " : " "
-        } ${getStyleState() ? "pb-0 pt-6" : ""} ${
+        } ${getStyleState() ? "pb-0 pt-5" : ""} ${
           type === "password" ? "pr-14" : ""
         }`}
         onChange={handleInputChange}
@@ -51,11 +51,11 @@ const CustomInput = (props) => {
         onBlur={handleInputBlur}
       />
       {getStyleState() && (
-        <span className="absolute text-[#56595E] text-[14px] top-1 left-8">
+        <span className="absolute text-[#56595E] text-[14px] top-2 left-8">
           {placeholder}
         </span>
       )}
-      {type === "password" && (
+      {type === "password" && inputValue !== "" && inputValue !== undefined && (
         <button
           onClick={handleTogglePassword}
           className="absolute right-6 top-1/2 transform -translate-y-1/2"

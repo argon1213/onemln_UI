@@ -42,7 +42,7 @@ const NameRegister = (props) => {
         </div>
       </div>
       <div className="my-8">
-        <div>
+        <div className="input-content">
           <CustomInput
             type="text"
             placeholder="Nome"

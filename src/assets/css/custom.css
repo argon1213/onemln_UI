@@ -13,6 +13,10 @@
   width: 540px;
 }
 
+.input-content {
+  width: 500px;
+}
+
 @media only screen and (min-width: 2000px) {
   .des-content {
     width: 1300px;
@@ -52,6 +56,9 @@
     height: 100vh;
   }
   .form-content {
+    width: 100%;
+  }
+  .input-content {
     width: 100%;
   }
   .header-content {

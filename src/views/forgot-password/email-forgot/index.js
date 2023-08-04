@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import CustomInput from "../../../components/input";
 import { ArrowSmallLeftIcon } from "@heroicons/react/24/outline";
 
-const EmailRegister = (props) => {
+const EmailForgotPage = (props) => {
   const { email, errorEmail, setEmail, nextFunc, backFunc } = props;
   const [buttonState, setButtonState] = useState(false);
 
@@ -26,12 +26,10 @@ const EmailRegister = (props) => {
         </span>
       </div>
       <div>
-        <div className="font-bold text-[32px]">
-          Piacere di conoscerti, Luca!
-        </div>
+        <div className="font-bold text-[32px]">Reimposta la tua password</div>
         <div className="text-[18px] pt-4">
-          Inserisci la tua email riceverai un codice di verifica. Per continuare
-          la registrazione.
+          Inserisci l’indirizzo email associato al tuo account. Ti invieremo
+          un’email con le istruzioni per reimpostare la tua password.
         </div>
       </div>
       <div className="my-8">
@@ -40,6 +38,7 @@ const EmailRegister = (props) => {
             type="text"
             placeholder="Email"
             errorState={errorEmail}
+            value={email}
             setValue={setEmail}
             style={"bg-[#F3F3F3]"}
           />
@@ -59,4 +58,4 @@ const EmailRegister = (props) => {
   );
 };
 
-export default EmailRegister;
+export default EmailForgotPage;

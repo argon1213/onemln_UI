@@ -87,7 +87,7 @@ function LogIn() {
                   </div>
                 </div>
                 <div className="my-8">
-                  <div>
+                  <div className="input-content">
                     <CustomInput
                       type="text"
                       placeholder="Email"
@@ -105,7 +105,7 @@ function LogIn() {
                     />
                     <div className="flex justify-end">
                       <a
-                        href="#"
+                        href="/forgot-password"
                         className="text-[#FE1C4E] font-bold text-[18px] cursor-pointer"
                       >
                         Password dimenticata?
