@@ -3,7 +3,7 @@ import { useState } from "react";
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 
 const CustomInput = (props) => {
-  const { errorState, setValue, type, placeholder, style } = props;
+  const { errorState, value, setValue, type, placeholder, style } = props;
 
   const [inputValue, setInputValue] = useState("");
   const [isFocused, setIsFocused] = useState(false);
@@ -39,7 +39,7 @@ const CustomInput = (props) => {
         type={
           type === "text" ? "text" : `${showPassword ? "text" : "password"}`
         }
-        value={inputValue}
+        value={value}
         placeholder={isFocused ? "" : placeholder}
         className={`custom-input h-[60px] ${style ? style : ""} ${
           errorState ? "!border-[#FE1C4E] " : " "

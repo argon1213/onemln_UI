@@ -4,10 +4,10 @@
 
 @layer components {
   .btn-primary {
-    @apply py-[10px] bg-[#CC5200] text-white font-semibold rounded-lg shadow-md hover:bg-[#cc5200dc] focus:outline-none focus:ring-2 focus:ring-[#cc52005d] focus:ring-opacity-75;
+    @apply py-[10px] px-[15px] bg-[#FE1C4E] text-[#fff] rounded-full shadow-md hover:bg-[#FE1C4E] hover:text-[#fff] focus:outline-none focus:ring-2 focus:ring-[#FE1C4E] focus:bg-[#FE1C4E] focus:text-[#fff] focus:ring-opacity-75 min-w-[192px] h-[65px] font-bold text-2xl;
   }
   .btn-secondary {
-    @apply py-[10px] bg-[#F3F3F3] text-[#56595E] rounded-full shadow-md hover:bg-[#FE1C4E] hover:text-[#fff] focus:outline-none focus:ring-2 focus:ring-[#FE1C4E] focus:bg-[#FE1C4E] focus:text-[#fff] focus:ring-opacity-75 w-[192px] h-[65px] font-bold text-2xl;
+    @apply py-[10px] px-[15px] bg-[#F3F3F3] text-[#56595E] rounded-full shadow-md hover:bg-[#56595E] hover:text-[#fff] focus:outline-none focus:ring-2 focus:ring-[#56595E] focus:bg-[#56595E] focus:text-[#fff] focus:ring-opacity-75 min-w-[192px] h-[65px] font-bold text-2xl;
   }
   .custom-input {
     @apply appearance-none border border-[#CDD1D9] w-full rounded-[10px] py-3 px-8 leading-7 focus:outline-none focus:border-[#D0D5DD] font-medium text-xl text-[#56595E];

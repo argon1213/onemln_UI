@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { login } from "../../apis/auth";
 import CustomInput from "../../components/input";
@@ -8,6 +8,7 @@ function LogIn() {
   const [password, setPassword] = useState("");
   const [errorEmail, setErrorEmail] = useState(false);
   const [errorPassword, setErrorPassword] = useState(false);
+  const [buttonState, setButtonState] = useState(false);
 
   const signIn = () => {
     let errorState = false;
@@ -37,6 +38,19 @@ function LogIn() {
         setErrorPassword(true);
       });
   };
+
+  useEffect(() => {
+    if (
+      email !== "" &&
+      email !== undefined &&
+      password !== "" &&
+      password !== undefined
+    ) {
+      setButtonState(true);
+    } else {
+      if (buttonState) setButtonState(false);
+    }
+  }, [email, password]);
 
   return (
     <div className="flex">
@@ -78,6 +92,7 @@ function LogIn() {
                       type="text"
                       placeholder="Email"
                       errorState={errorEmail}
+                      value={email}
                       setValue={setEmail}
                       style={"bg-[#F3F3F3]"}
                     />
@@ -85,6 +100,7 @@ function LogIn() {
                       type="password"
                       placeholder="Password"
                       errorState={errorPassword}
+                      value={password}
                       setValue={setPassword}
                     />
                     <div className="flex justify-end">
@@ -99,7 +115,10 @@ function LogIn() {
                 </div>
                 <div className="flex flex-wrap justify-start">
                   <div className="submit-content">
-                    <button className="btn-secondary" onClick={signIn}>
+                    <button
+                      className={buttonState ? "btn-primary" : "btn-secondary"}
+                      onClick={signIn}
+                    >
                       Accedi
                     </button>
                   </div>

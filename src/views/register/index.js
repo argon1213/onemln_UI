@@ -2,27 +2,36 @@ import React from "react";
 import { useState } from "react";
 import { login } from "../../apis/auth";
 import CustomInput from "../../components/input";
+import NameRegister from "./name-register";
+import { REGISTER_STATE } from "../../lib/constants";
+import EmailRegister from "./email-register";
+import SubmitRegister from "./submit-register";
 
 function Register() {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [surName, setSurName] = useState("");
+  const [code, setCode] = useState("");
+  const [errorName, setErrorName] = useState(false);
+  const [errorSurName, setErrorSurName] = useState(false);
   const [errorEmail, setErrorEmail] = useState(false);
-  const [errorPassword, setErrorPassword] = useState(false);
+  const [errorCode, setErrorCode] = useState(false);
+  const [registerState, setRegisterState] = useState(0);
 
   const signIn = () => {
     let errorState = false;
-    if (email === "" || email === undefined) {
-      setErrorEmail(true);
+    if (name === "" || name === undefined) {
+      setErrorName(true);
       errorState = true;
     }
-    if (password === "" || password === undefined) {
-      setErrorPassword(true);
+    if (surName === "" || surName === undefined) {
+      setErrorSurName(true);
       errorState = true;
     }
     if (errorState) return;
     let user = {
-      username: email,
-      password,
+      name,
+      surName,
     };
 
     login(user)
@@ -33,9 +42,40 @@ function Register() {
       })
       .catch((e) => {
         console.log(e);
-        setErrorEmail(true);
-        setErrorPassword(true);
+        setErrorName(true);
+        setErrorSurName(true);
       });
+  };
+
+  const goEmailRegister = () => {
+    let errorState = false;
+    if (name === "" || name === undefined) {
+      setErrorName(true);
+      errorState = true;
+    }
+    if (surName === "" || surName === undefined) {
+      setErrorSurName(true);
+      errorState = true;
+    }
+    if (errorState) return;
+    setRegisterState(REGISTER_STATE.email_page);
+  };
+
+  const goSubmitRegister = () => {
+    let errorState = false;
+    if (email === "" || email === undefined) {
+      setErrorEmail(true);
+      errorState = true;
+    }
+    if (errorState) return;
+    setRegisterState(REGISTER_STATE.submit_page);
+  };
+
+  const backRegisterState = () => {
+    let __state = registerState;
+    --__state;
+    if (__state == 0) __state = 0;
+    setRegisterState(__state);
   };
 
   return (
@@ -52,85 +92,45 @@ function Register() {
                 />
               </a>
 
-              <div className="flex flex-wrap justify-end pl-12 text-[18px] font-normal">
-                <div className="header-question">Hai già un account?</div>
-                <a
-                  href="/login"
-                  className="font-bold text-[#FE1C4E] cursor-pointer ml-2 whitespace-nowrap"
-                >
-                  Accedi
-                </a>
-              </div>
+              {registerState === REGISTER_STATE.name_page && (
+                <div className="flex flex-wrap justify-end pl-12 text-[18px] font-normal">
+                  <div className="header-question">Hai già un account?</div>
+                  <a
+                    href="/login"
+                    className="font-bold text-[#FE1C4E] cursor-pointer ml-2 whitespace-nowrap"
+                  >
+                    Accedi
+                  </a>
+                </div>
+              )}
             </div>
             <div className="form-content">
-              <div>
-                <div>
-                  <div className="font-bold text-[32px]">
-                    Hey! Lasciati trasportare dai mercati finanziari. Registrati
-                    subito
-                  </div>
-                  <div className="text-[18px] pt-4">
-                    Inserisci i tuoi dati anagrafici per continuare
-                  </div>
-                </div>
-                <div className="my-8">
-                  <div>
-                    <CustomInput
-                      type="text"
-                      placeholder="Nome"
-                      errorState={errorEmail}
-                      setValue={setEmail}
-                      style={"bg-[#F3F3F3]"}
-                    />
-                    <CustomInput
-                      type="text"
-                      placeholder="Cognome"
-                      errorState={errorEmail}
-                      setValue={setEmail}
-                      style={"bg-[#F3F3F3]"}
-                    />
-                    <CustomInput
-                      type="text"
-                      placeholder="Codice di invito (Opzionale)"
-                      errorState={errorPassword}
-                      setValue={setPassword}
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-wrap justify-start">
-                  <div className="submit-content">
-                    <button className="btn-secondary" onClick={signIn}>
-                      Registrati
-                    </button>
-                  </div>
-                  <div className="flex">
-                    <div className="px-6 text-2xl font-medium text-[#56595E] h-full leading-[65px] submit-connecter">
-                      o
-                    </div>
-                    <div className="pr-3">
-                      <img
-                        alt="google"
-                        className="cursor-pointer"
-                        src="/assets/images/Google_Logo.png"
-                      />
-                    </div>
-                    <div className="pr-3">
-                      <img
-                        alt="google"
-                        className="cursor-pointer"
-                        src="/assets/images/Facebook_Logo.png"
-                      />
-                    </div>
-                    <div className="pr-3">
-                      <img
-                        alt="google"
-                        className="cursor-pointer"
-                        src="/assets/images/Apple_Logo.png"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {registerState === REGISTER_STATE.name_page && (
+                <NameRegister
+                  name={name}
+                  surName={surName}
+                  code={code}
+                  setName={setName}
+                  errorName={errorName}
+                  setSurName={setSurName}
+                  errorSurName={errorSurName}
+                  setCode={setCode}
+                  errorCode={errorCode}
+                  nextFunc={goEmailRegister}
+                />
+              )}
+              {registerState === REGISTER_STATE.email_page && (
+                <EmailRegister
+                  email={email}
+                  setEmail={setEmail}
+                  errorEmail={errorEmail}
+                  nextFunc={goSubmitRegister}
+                  backFunc={backRegisterState}
+                />
+              )}
+              {registerState === REGISTER_STATE.submit_page && (
+                <SubmitRegister email={email} />
+              )}
             </div>
 
             <div className="text-[14px] font-normal footer-content">
