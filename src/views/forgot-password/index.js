@@ -45,7 +45,7 @@ function ForgotPassword() {
               <a href="#">
                 <img
                   alt="logo"
-                  className="cursor-pointer"
+                  className="logo-header"
                   src="/assets/icons/Logo_nero.svg"
                 />
               </a>

@@ -19,10 +19,10 @@ const EmailForgotPage = (props) => {
     <div>
       <div className="pb-4">
         <span
-          className="bg-[#F3F3F3] rounded-full w-[45px] h-[45px] inline-block leading-[45px] align-middle text-center cursor-pointer"
+          className="bg-[#F3F3F3] rounded-full w-[4.8vh] h-[4.8vh] inline-block leading-[4.8vh] align-middle text-center cursor-pointer"
           onClick={backFunc}
         >
-          <ArrowSmallLeftIcon className="w-[30px] h-[30px] inline-block text-[#56595E] font-bold" />
+          <ArrowSmallLeftIcon className="w-[3vh] h-[3vh] inline-block text-[#56595E] font-bold" />
         </span>
       </div>
       <div>
