@@ -5,8 +5,8 @@ const SubmitReset = (props) => {
   return (
     <div>
       <div>
-        <div className="font-bold text-[32px]">Password aggiornata!</div>
-        <div className="text-[18px] pt-4">
+        <div className="title">Password aggiornata!</div>
+        <div className="description">
           Accedi al tuo account con le nuove credenziali
         </div>
       </div>

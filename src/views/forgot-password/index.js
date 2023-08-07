@@ -46,11 +46,11 @@ function ForgotPassword() {
                 <img
                   alt="logo"
                   className="cursor-pointer"
-                  src="/assets/images/Livello_1.png"
+                  src="/assets/icons/Logo_nero.svg"
                 />
               </a>
             </div>
-            <div className="form-content">
+            <div className="main-content">
               {forgotState === FORGOT_STATE.email_page && (
                 <EmailForgotPage
                   email={email}

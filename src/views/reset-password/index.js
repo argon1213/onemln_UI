@@ -32,11 +32,11 @@ function ResetPassword() {
                 <img
                   alt="logo"
                   className="cursor-pointer"
-                  src="/assets/images/Livello_1.png"
+                  src="/assets/icons/Logo_nero.svg"
                 />
               </a>
             </div>
-            <div className="form-content">
+            <div className="main-content">
               {resetState === RESET_STATE.password_page && (
                 <ConfirmReset
                   password={password}

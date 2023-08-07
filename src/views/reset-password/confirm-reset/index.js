@@ -27,8 +27,8 @@ const ConfirmReset = (props) => {
   return (
     <div>
       <div>
-        <div className="font-bold text-[32px]">Cambia la password</div>
-        <div className="text-[18px] pt-4">
+        <div className="title">Cambia la password</div>
+        <div className="description">
           Utilizza una password complessa che non utilizzi per altri account!
         </div>
       </div>
@@ -50,13 +50,13 @@ const ConfirmReset = (props) => {
           />
         </div>
       </div>
-      <div>
+      {/* <div>
         <div className="flex flex-wrap">
           <div>
             <CustomCircleCheck />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="flex flex-wrap justify-start">
         <div className="submit-content">
           <button

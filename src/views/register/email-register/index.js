@@ -19,17 +19,15 @@ const EmailRegister = (props) => {
     <div>
       <div className="pb-4">
         <span
-          className="bg-[#F3F3F3] rounded-full w-[50px] h-[50px] inline-block leading-[50px] align-middle text-center"
+          className="bg-[#F3F3F3] rounded-full w-[45px] h-[45px] inline-block leading-[45px] align-middle text-center cursor-pointer"
           onClick={backFunc}
         >
           <ArrowSmallLeftIcon className="w-[30px] h-[30px] inline-block text-[#56595E] font-bold" />
         </span>
       </div>
       <div>
-        <div className="font-bold text-[32px]">
-          Piacere di conoscerti, Luca!
-        </div>
-        <div className="text-[18px] pt-4">
+        <div className="title">Piacere di conoscerti, Luca!</div>
+        <div className="description">
           Inserisci la tua email riceverai un codice di verifica. Per continuare
           la registrazione.
         </div>

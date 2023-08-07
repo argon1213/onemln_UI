@@ -61,12 +61,12 @@ function LogIn() {
               <a href="#">
                 <img
                   alt="logo"
-                  className="cursor-pointer"
-                  src="/assets/images/Livello_1.png"
+                  className="logo-header"
+                  src="/assets/icons/Logo_nero.svg"
                 />
               </a>
 
-              <div className="flex flex-wrap justify-end pl-12 text-[18px] font-normal">
+              <div className="flex flex-wrap justify-end pl-12 link-text font-normal">
                 <div className="header-question">
                   Non hai ancora un account?
                 </div>
@@ -78,15 +78,15 @@ function LogIn() {
                 </a>
               </div>
             </div>
-            <div className="form-content">
+            <div className="main-content">
               <div>
                 <div>
-                  <div className="font-bold text-[32px]">Bentornato!</div>
-                  <div className="text-[18px] pt-4">
+                  <div className="title">Bentornato!</div>
+                  <div className="description">
                     Accedi con le tue credenziali per iniziare a migliorarti
                   </div>
                 </div>
-                <div className="my-8">
+                <div className="form-content">
                   <div className="input-content">
                     <CustomInput
                       type="text"
@@ -106,7 +106,7 @@ function LogIn() {
                     <div className="flex justify-end">
                       <a
                         href="/forgot-password"
-                        className="text-[#FE1C4E] font-bold text-[18px] cursor-pointer"
+                        className="text-[#FE1C4E] font-bold link-text cursor-pointer"
                       >
                         Password dimenticata?
                       </a>
@@ -114,7 +114,7 @@ function LogIn() {
                   </div>
                 </div>
                 <div className="flex flex-wrap justify-start">
-                  <div className="submit-content">
+                  <div className="submit-content pr-4">
                     <button
                       className={buttonState ? "btn-primary" : "btn-secondary"}
                       onClick={signIn}
@@ -123,28 +123,28 @@ function LogIn() {
                     </button>
                   </div>
                   <div className="flex">
-                    <div className="px-6 text-2xl font-medium text-[#56595E] h-full leading-[65px] submit-connecter">
+                    <div className="pr-4 text-xl font-medium text-[#56595E] h-full leading-[50px] submit-connecter">
                       o
                     </div>
                     <div className="pr-3">
                       <img
                         alt="google"
-                        className="cursor-pointer"
-                        src="/assets/images/Google_Logo.png"
+                        className="cursor-pointer w-[45px] h-[45px]"
+                        src="/assets/icons/Google_Logo.svg"
                       />
                     </div>
                     <div className="pr-3">
                       <img
                         alt="google"
-                        className="cursor-pointer"
-                        src="/assets/images/Facebook_Logo.png"
+                        className="cursor-pointer w-[45px] h-[45px]"
+                        src="/assets/icons/Facebook_Logo.svg"
                       />
                     </div>
                     <div className="pr-3">
                       <img
                         alt="google"
-                        className="cursor-pointer"
-                        src="/assets/images/Apple_Logo.png"
+                        className="cursor-pointer w-[45px] h-[45px]"
+                        src="/assets/icons/Apple_Logo.svg"
                       />
                     </div>
                   </div>

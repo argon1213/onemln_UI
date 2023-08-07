@@ -5,8 +5,8 @@ const SubmitForgot = (props) => {
   return (
     <div>
       <div>
-        <div className="font-bold text-[32px]">Email inviata!</div>
-        <div className="text-[18px] pt-4">
+        <div className="title">Email inviata!</div>
+        <div className="description">
           {`Le istruzioni per reimpostare la password sono state inviate a ${email}`}
         </div>
       </div>

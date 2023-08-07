@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
 
@@ -8,6 +8,10 @@ const CustomInput = (props) => {
   const [inputValue, setInputValue] = useState("");
   const [isFocused, setIsFocused] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+
+  useEffect(() => {
+    setInputValue(value);
+  }, []);
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -34,16 +38,16 @@ const CustomInput = (props) => {
   };
 
   return (
-    <div className="my-4 relative">
+    <div className="my-3 relative">
       <input
         type={
           type === "text" ? "text" : `${showPassword ? "text" : "password"}`
         }
         value={value}
         placeholder={isFocused ? "" : placeholder}
-        className={`custom-input h-[65px] ${style ? style : ""} ${
+        className={`custom-input h-[50px] ${style ? style : ""} ${
           errorState ? "!border-[#FE1C4E] " : " "
-        } ${getStyleState() ? "pb-0 pt-5" : ""} ${
+        } ${getStyleState() ? "pb-0 pt-4" : ""} ${
           type === "password" ? "pr-14" : ""
         }`}
         onChange={handleInputChange}
@@ -51,7 +55,7 @@ const CustomInput = (props) => {
         onBlur={handleInputBlur}
       />
       {getStyleState() && (
-        <span className="absolute text-[#56595E] text-[14px] top-2 left-8">
+        <span className="absolute text-[#56595E] text-[12px] top-1 left-8 truncate">
           {placeholder}
         </span>
       )}
@@ -61,9 +65,9 @@ const CustomInput = (props) => {
           className="absolute right-6 top-1/2 transform -translate-y-1/2"
         >
           {showPassword ? (
-            <EyeSlashIcon className="h-6 w-6 text-[#56595E]" />
+            <EyeSlashIcon className="h-5 w-5 text-[#56595E]" />
           ) : (
-            <EyeIcon className="h-6 w-6 text-[#56595E]" />
+            <EyeIcon className="h-5 w-5 text-[#56595E]" />
           )}
         </button>
       )}

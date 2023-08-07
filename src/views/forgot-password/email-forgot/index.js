@@ -19,15 +19,15 @@ const EmailForgotPage = (props) => {
     <div>
       <div className="pb-4">
         <span
-          className="bg-[#F3F3F3] rounded-full w-[50px] h-[50px] inline-block leading-[50px] align-middle text-center"
+          className="bg-[#F3F3F3] rounded-full w-[45px] h-[45px] inline-block leading-[45px] align-middle text-center cursor-pointer"
           onClick={backFunc}
         >
           <ArrowSmallLeftIcon className="w-[30px] h-[30px] inline-block text-[#56595E] font-bold" />
         </span>
       </div>
       <div>
-        <div className="font-bold text-[32px]">Reimposta la tua password</div>
-        <div className="text-[18px] pt-4">
+        <div className="title">Reimposta la tua password</div>
+        <div className="description">
           Inserisci l’indirizzo email associato al tuo account. Ti invieremo
           un’email con le istruzioni per reimpostare la tua password.
         </div>

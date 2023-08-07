@@ -5,8 +5,8 @@ const SubmitRegister = (props) => {
   return (
     <div>
       <div>
-        <div className="font-bold text-[32px]">Email inviata!</div>
-        <div className="text-[18px] pt-4">
+        <div className="title">Email inviata!</div>
+        <div className="description">
           {`Le istruzioni per impostare la password sono state inviate a ${email}`}
         </div>
       </div>

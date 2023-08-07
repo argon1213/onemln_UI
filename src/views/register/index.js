@@ -87,13 +87,13 @@ function Register() {
               <a href="#">
                 <img
                   alt="logo"
-                  className="cursor-pointer"
-                  src="/assets/images/Livello_1.png"
+                  className="logo-header"
+                  src="/assets/icons/Logo_nero.svg"
                 />
               </a>
 
               {registerState === REGISTER_STATE.name_page && (
-                <div className="flex flex-wrap justify-end pl-12 text-[18px] font-normal">
+                <div className="flex flex-wrap justify-end pl-12 link-text font-normal">
                   <div className="header-question">Hai già un account?</div>
                   <a
                     href="/login"
@@ -104,7 +104,7 @@ function Register() {
                 </div>
               )}
             </div>
-            <div className="form-content">
+            <div className="main-content">
               {registerState === REGISTER_STATE.name_page && (
                 <NameRegister
                   name={name}
