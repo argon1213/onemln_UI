@@ -51,7 +51,7 @@ function ResetPassword() {
               {resetState === RESET_STATE.submit_page && <SubmitReset />}
             </div>
 
-            <div className="text-[14px] font-normal footer-content">
+            <div className="font-normal footer-content">
               <p className="font-semibold">
                 Copyright © 2023 Luca Cerullo. Tutti i diritti riservati
               </p>

@@ -114,36 +114,36 @@ function LogIn() {
                   </div>
                 </div>
                 <div className="flex flex-wrap justify-start">
-                  <div className="submit-content pr-4">
+                  <div className="pr-[1.5vh] mb-[3vh]">
                     <button
-                      className={buttonState ? "btn-primary" : "btn-secondary"}
+                      className="btn-secondary button-size"
                       onClick={signIn}
                     >
                       Accedi
                     </button>
                   </div>
-                  <div className="flex">
-                    <div className="pr-4 text-xl font-medium text-[#56595E] h-full leading-[50px] submit-connecter">
+                  <div className="flex items-center mb-[3vh]">
+                    <div className="pr-[1.5vh] font-medium text-[#56595E] submit-connecter">
                       o
                     </div>
-                    <div className="pr-3">
+                    <div className="pr-[1.5vh]">
                       <img
                         alt="google"
-                        className="cursor-pointer w-[45px] h-[45px]"
+                        className="cursor-pointer min-logo"
                         src="/assets/icons/Google_Logo.svg"
                       />
                     </div>
-                    <div className="pr-3">
+                    <div className="pr-[1.5vh]">
                       <img
                         alt="google"
-                        className="cursor-pointer w-[45px] h-[45px]"
+                        className="cursor-pointer min-logo"
                         src="/assets/icons/Facebook_Logo.svg"
                       />
                     </div>
-                    <div className="pr-3">
+                    <div className="pr-[1.5vh]">
                       <img
                         alt="google"
-                        className="cursor-pointer w-[45px] h-[45px]"
+                        className="cursor-pointer min-logo"
                         src="/assets/icons/Apple_Logo.svg"
                       />
                     </div>
@@ -152,7 +152,7 @@ function LogIn() {
               </div>
             </div>
 
-            <div className="text-[14px] font-normal footer-content">
+            <div className="font-normal footer-content">
               <p className="font-semibold">
                 Copyright © 2023 Luca Cerullo. Tutti i diritti riservati
               </p>

@@ -47,7 +47,11 @@ const EmailForgotPage = (props) => {
       <div className="flex flex-wrap justify-start">
         <div className="submit-content">
           <button
-            className={buttonState ? "btn-primary" : "btn-secondary"}
+            className={
+              buttonState
+                ? "btn-primary button-size"
+                : "btn-secondary button-size"
+            }
             onClick={nextFunc}
           >
             Invia email

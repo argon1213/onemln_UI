@@ -69,36 +69,33 @@ const NameRegister = (props) => {
         </div>
       </div>
       <div className="flex flex-wrap justify-start">
-        <div className="submit-content pr-4">
-          <button
-            className={buttonState ? "btn-primary" : "btn-secondary"}
-            onClick={nextFunc}
-          >
+        <div className="pr-[1.5vh] mb-[3vh]">
+          <button className="btn-secondary button-size" onClick={nextFunc}>
             Registrati
           </button>
         </div>
-        <div className="flex">
-          <div className="pr-4 text-xl font-medium text-[#56595E] h-full leading-[50px] submit-connecter">
+        <div className="flex mb-[3vh]">
+          <div className="pr-[1.5vh] text-xl font-medium text-[#56595E] h-full leading-[50px] submit-connecter">
             o
           </div>
-          <div className="pr-3">
+          <div className="pr-[1.5vh]">
             <img
               alt="google"
-              className="cursor-pointer h-[45px] w-[45px]"
+              className="cursor-pointer min-logo"
               src="/assets/icons/Google_Logo.svg"
             />
           </div>
-          <div className="pr-3">
+          <div className="pr-[1.5vh]">
             <img
               alt="google"
-              className="cursor-pointer h-[45px] w-[45px]"
+              className="cursor-pointer min-logo"
               src="/assets/icons/Facebook_Logo.svg"
             />
           </div>
-          <div className="pr-3">
+          <div className="pr-[1.5vh]">
             <img
               alt="google"
-              className="cursor-pointer h-[45px] w-[45px]"
+              className="cursor-pointer min-logo"
               src="/assets/icons/Apple_Logo.svg"
             />
           </div>

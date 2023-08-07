@@ -4,12 +4,12 @@
 
 @layer components {
   .btn-primary {
-    @apply py-[10px] px-[15px] bg-[#FE1C4E] text-[#fff] rounded-full shadow-md hover:bg-[#FE1C4E] hover:text-[#fff] focus:outline-none focus:ring-2 focus:ring-[#FE1C4E] focus:bg-[#FE1C4E] focus:text-[#fff] focus:ring-opacity-75 min-w-[140px] h-[45px] font-bold text-lg;
+    @apply py-[1vh] px-[1.5vh] bg-[#FE1C4E] text-[#fff] rounded-full shadow-md hover:bg-[#FE1C4E] hover:text-[#fff] focus:outline-none focus:ring-2 focus:ring-[#FE1C4E] focus:bg-[#FE1C4E] focus:text-[#fff] focus:ring-opacity-75 font-bold text-[2.3vh];
   }
   .btn-secondary {
-    @apply py-[10px] px-[15px] bg-[#F3F3F3] text-[#56595E] rounded-full shadow-md hover:bg-[#FE1C4E] hover:text-[#fff] focus:outline-none focus:ring-2 focus:ring-[#FE1C4E] focus:bg-[#FE1C4E] focus:text-[#fff] focus:ring-opacity-75 min-w-[140px] h-[45px] font-bold text-lg;
+    @apply py-[1vh] px-[1.5vh] bg-[#F3F3F3] text-[#56595E] rounded-full shadow-md hover:bg-[#FE1C4E] hover:text-[#fff] focus:outline-none focus:ring-2 focus:ring-[#FE1C4E] focus:bg-[#FE1C4E] focus:text-[#fff] focus:ring-opacity-75 font-bold text-[2.3vh];
   }
   .custom-input {
-    @apply appearance-none border border-[#CDD1D9] w-full rounded-[10px] py-3 px-8 leading-7 focus:outline-none focus:border-[#D0D5DD] font-medium text-lg text-[#56595E];
+    @apply appearance-none border border-[#CDD1D9] w-full rounded-[10px] py-[1vh] px-[3vh] leading-7 focus:outline-none focus:border-[#D0D5DD] font-medium text-[2.3vh] text-[#56595E];
   }
 }
