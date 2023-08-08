@@ -10,6 +10,6 @@
     @apply py-[1vh] px-[1.5vh] bg-[#F3F3F3] text-[#56595E] rounded-full shadow-md hover:bg-[#FE1C4E] hover:text-[#fff] focus:outline-none focus:ring-2 focus:ring-[#FE1C4E] focus:bg-[#FE1C4E] focus:text-[#fff] focus:ring-opacity-75 font-bold text-[2.3vh];
   }
   .custom-input {
-    @apply appearance-none border border-[#CDD1D9] w-full rounded-[10px] py-[1vh] px-[3vh] leading-7 focus:outline-none focus:border-[#D0D5DD] font-medium text-[2.3vh] text-[#56595E];
+    @apply appearance-none border border-[#CDD1D9] w-full rounded-[1vh] py-[1vh] px-[3vh] leading-7 focus:outline-none focus:border-[#D0D5DD] font-medium text-[2.3vh] text-[#56595E];
   }
 }

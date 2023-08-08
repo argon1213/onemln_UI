@@ -94,7 +94,6 @@ function LogIn() {
                       errorState={errorEmail}
                       value={email}
                       setValue={setEmail}
-                      style={"bg-[#F3F3F3]"}
                     />
                     <CustomInput
                       type="password"

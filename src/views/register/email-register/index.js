@@ -39,7 +39,6 @@ const EmailRegister = (props) => {
             placeholder="Email"
             errorState={errorEmail}
             setValue={setEmail}
-            style={"bg-[#F3F3F3]"}
           />
         </div>
       </div>

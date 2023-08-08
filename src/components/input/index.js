@@ -44,21 +44,25 @@ const CustomInput = (props) => {
           type === "text" ? "text" : `${showPassword ? "text" : "password"}`
         }
         value={value}
-        placeholder={isFocused ? "" : placeholder}
+        placeholder={""}
         className={`custom-input h-[6.6vh] ${style ? style : ""} ${
           errorState ? "!border-[#FE1C4E] " : " "
-        } ${getStyleState() ? "pb-0 pt-[2vh]" : ""} ${
+        } ${getStyleState() ? "pb-0 pt-[2vh] bg-[#F3F3F3]" : ""} ${
           type === "password" ? "pr-14" : ""
         }`}
         onChange={handleInputChange}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
       />
-      {getStyleState() && (
-        <span className="absolute text-[#56595E] text-[1.6vh] top-[0.4vh] left-[3vh] truncate duration-500">
-          {placeholder}
-        </span>
-      )}
+      <span
+        className={`absolute text-[#56595E] font-medium left-[3vh] truncate duration-200 ${
+          getStyleState()
+            ? "top-[0.4vh] text-[1.6vh]"
+            : "text-[2.3vh] top-1/2 transform -translate-y-1/2 "
+        }`}
+      >
+        {placeholder}
+      </span>
       {type === "password" && inputValue !== "" && inputValue !== undefined && (
         <button
           onClick={handleTogglePassword}

@@ -49,7 +49,6 @@ const NameRegister = (props) => {
             errorState={errorName}
             value={name}
             setValue={setName}
-            style={"bg-[#F3F3F3]"}
           />
           <CustomInput
             type="text"
@@ -57,7 +56,6 @@ const NameRegister = (props) => {
             errorState={errorSurName}
             value={surName}
             setValue={setSurName}
-            style={"bg-[#F3F3F3]"}
           />
           <CustomInput
             type="text"

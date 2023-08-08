@@ -40,7 +40,6 @@ const EmailForgotPage = (props) => {
             errorState={errorEmail}
             value={email}
             setValue={setEmail}
-            style={"bg-[#F3F3F3]"}
           />
         </div>
       </div>
