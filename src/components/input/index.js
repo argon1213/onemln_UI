@@ -45,17 +45,17 @@ const CustomInput = (props) => {
         }
         value={value}
         placeholder={""}
-        className={`custom-input h-[6.6vh] ${style ? style : ""} ${
-          errorState ? "!border-[#FE1C4E] " : " "
-        } ${getStyleState() ? "pb-0 pt-[2vh] bg-[#F3F3F3]" : ""} ${
-          type === "password" ? "pr-14" : ""
-        }`}
+        className={`custom-input bg-transparent h-[6.6vh] ${
+          style ? style : ""
+        } ${errorState ? "!border-[#FE1C4E] " : " "} ${
+          getStyleState() ? "pb-0 pt-[2vh] bg-[#F3F3F3]" : ""
+        } ${type === "password" ? "pr-14" : ""}`}
         onChange={handleInputChange}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
       />
       <span
-        className={`absolute text-[#56595E] font-medium left-[3vh] truncate duration-200 ${
+        className={`absolute text-[#56595E] font-medium left-[3vh] truncate duration-200 -z-10 ${
           getStyleState()
             ? "top-[0.4vh] text-[1.6vh]"
             : "text-[2.3vh] top-1/2 transform -translate-y-1/2 "

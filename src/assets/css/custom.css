@@ -82,6 +82,32 @@
   }
 }
 
+@media (min-width: 560px) and (orientation: portrait) {
+  .des-content {
+    padding: 6vh 8vh 6vh 8vh;
+  }
+  .img-content {
+    display: none;
+    height: 100vh;
+  }
+  .main-content {
+    width: 100%;
+    /* margin: 0 auto; */
+  }
+  .input-content {
+    width: 100%;
+  }
+  .header-content {
+    padding-bottom: 3vh;
+  }
+  .footer-content {
+    padding-top: 3vh;
+  }
+  .header-question {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 560px) {
   .des-content {
     padding: 6vh 8vh 6vh 8vh;
